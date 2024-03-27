@@ -82,9 +82,13 @@ WSGI_APPLICATION = 'erickgym.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "erickgym_db",
+        "USER": "admin",
+        "PASSWORD": "IECDwOarPTC6ROIxLsAfI8rNcm9wUtLu",
+        "HOST": "dpg-co281ne3e1ms73efct7g-a",
+        "PORT": "5432",
     }
 }
 
